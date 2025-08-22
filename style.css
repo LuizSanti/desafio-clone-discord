@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+
+.tela-inicial {
+  position: relative;
+  width: 100%;
+  height: 459px; /* igual ao Figma */
+  overflow: hidden;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 900px;
+}
+
+.conteudo h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.conteudo p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.branco {
+  background-color: white;
+  color: black;
+}
+
+.btn.preto {
+  background-color: #23272a;
+  color: white;
+}
+
+.secao-convite {
+  background-color: #f6f6f6;
+  padding: 120px 0;
+}
+
+.container-secao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.imagem-discord {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-discord img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto-convite {
+  flex: 1;
+}
+
+.texto-convite h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #23272a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  }
+
+.texto-convite p {
+  font-size: 20px;
+  color: #4f545c;
+  line-height: 1.6;
+}
+
+.secao-encontrar {
+  background-color: #fff;
+  padding: 120px 0;
+}
+
+.texto-encontrar {
+  flex: 1;
+}
+
+.texto-encontrar h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #23272a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.texto-encontrar p {
+  font-size: 20px;
+  color: #4f545c;
+  line-height: 1.6;
+}
+
+.imagem-encontrar {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-encontrar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.secao-moderacao {
+  background-color: #f6f6f6;
+  padding: 120px 0;
+  }
+
+.texto-moderacao {
+  flex: 1;
+}
+
+.texto-moderacao h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #23272a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.texto-moderacao p {
+  font-size: 20px;
+  color: #4f545c;
+  line-height: 1.6;
+}
+
+.imagem-moderacao {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.imagem-moderacao img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.secao-tecnologia {
+  background-color: #fff;
+  padding: 120px 0;
+}
+
+.container-tecnologia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.texto-tecnologia {
+  margin-bottom: 80px;
+}
+
+.texto-tecnologia h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #23272a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.texto-tecnologia p {
+  font-size: 20px;
+  color: #4f545c;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imagem-tecnologia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-tecnologia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #23272A;
+  padding: 35px 0;
+}
+
+footer .footer-discord {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  
+  .container-secao {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    padding: 0 20px; 
+  }
+  
+  .secao-encontrar .container-secao {
+    flex-direction: column-reverse;
+  }
+  
+  .texto-convite h2,
+  .texto-encontrar h2,
+  .texto-moderacao h2 {
+    font-size: 28px;
+  }
+  
+  .texto-convite p,
+  .texto-encontrar p,
+  .texto-moderacao p {
+    font-size: 16px;
+  }
+  
+  .secao-convite,
+  .secao-encontrar,
+  .secao-moderacao,
+  .secao-tecnologia {
+    padding: 60px 0;
+  }
+  
+  .texto-tecnologia {
+    margin-bottom: 40px;
+  }
+  
+  .texto-tecnologia h2 {
+    font-size: 28px;
+  }
+  
+  .texto-tecnologia p {
+    font-size: 16px;
+  }
+  
+  .container-tecnologia {
+    padding: 0 20px;
+  }
+  
+  .imagem-convite img,
+  .imagem-encontrar img,
+  .imagem-moderacao img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .botao-download,
+  .botao-secundario {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 16px 32px; 
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  
+  .container-secao {
+    gap: 50px;
+    padding: 0 40px;
+  }
+  
+  .texto-convite h2,
+  .texto-encontrar h2,
+  .texto-moderacao h2 {
+    font-size: 36px;
+  }
+  
+  .texto-convite p,
+  .texto-encontrar p,
+  .texto-moderacao p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .container-secao {
+    gap: 30px; 
+    padding: 0 16px;
+  }
+  
+  .texto-convite h2,
+  .texto-encontrar h2,
+  .texto-moderacao h2,
+  .texto-tecnologia h2 {
+    font-size: 24px;
+  }
+  
+  .texto-convite p,
+  .texto-encontrar p,
+  .texto-moderacao p,
+  .texto-tecnologia p {
+    font-size: 15px;
+  }
+  
+  .secao-convite,
+  .secao-encontrar,
+  .secao-moderacao,
+  .secao-tecnologia {
+    padding: 50px 0;
+  }
+  
+  .botao-download,
+  .botao-secundario {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+}
+
+/* REGRAS EXTRAS para garantir que tudo funcione bem */
+@media (max-width: 768px) {
+  
+  /* Evita que a página "vaze" para os lados */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Garante que todos os elementos tenham o tamanho correto */
+  * {
+    box-sizing: border-box;
+  }
+}
